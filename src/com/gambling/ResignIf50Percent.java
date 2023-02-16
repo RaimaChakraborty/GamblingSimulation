@@ -38,8 +38,7 @@ public class ResignIf50Percent {
         System.out.println("Welcome To Gambling Simulator Program");
         ResignIf50Percent simulation = new ResignIf50Percent();                 //Creating a new object
         simulation.gamblingWinLose();                                           //Calling the method
-        ResignIf50Percent simulation1 = new ResignIf50Percent();                 //Creating a new object
-        simulation1.gamblingWinLose();                                            //Calling the first method (UC2)
+                                                                                //Calling the first method (UC2)
         ResignIf50Percent resignCheck = new ResignIf50Percent();
         resignCheck.gamblerResign(50);                                //Calling the second method (UC3)
     }
