@@ -20,18 +20,17 @@ public class WinOrLossEachMonth {
                     dailyAmount -= betEveryGame;
                 }
             }
-        }
-        if (dailyAmount > 0){                                            //Printing the daily amount for wins
-            winDays++;
-            System.out.println("Day "+ i + ": The amount won is $" + dailyAmount);
-        }
-        else if (dailyAmount == 0){                                     //Printing the daily amount for draw
-            drawDays++;
-            System.out.println("Day "+ i +": There is no net gain or loss ");
-        }
-        else if (dailyAmount < 0){                                      //Printing the daily amount for loss
-            lossDays++;
-            System.out.println("Day "+ i + ": The amount lost is $" + Math.abs(dailyAmount));
+
+            if (dailyAmount > 0) {                                            //Printing the daily amount for wins
+                winDays++;
+                System.out.println("Day " + i + ": The amount won is $" + dailyAmount);
+            } else if (dailyAmount == 0) {                                     //Printing the daily amount for draw
+                drawDays++;
+                System.out.println("Day " + i + ": There is no net gain or loss ");
+            } else if (dailyAmount < 0) {                                      //Printing the daily amount for loss
+                lossDays++;
+                System.out.println("Day " + i + ": The amount lost is $" + Math.abs(dailyAmount));
+            }
         }
 
         System.out.println("In this month I have won for " + winDays +" days, lost for " + lossDays + " days and drew for " + drawDays + " days");
